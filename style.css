@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+p.option {
+    color: whitesmoke;
+    font-size: 2.2vb;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 0rem;
+}
+
+/* lets build a side menu!!!!! */
+
+#menulist {
+    background-image: linear-gradient(to right, rgb(5, 18, 41) 93% , rgba(255, 255, 0, 0));
+    width: 25vb;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: -23vb;
+}
+
+#menulist:hover {
+    left: 0;
+    background-image: linear-gradient(to right, rgb(5, 18, 41) 30% , rgba(255, 255, 0, 0));
+    
+    transition-delay: left 1s;
+
+}
+
+
+#list {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    border: 3px solid red;
+}
+
+#menulist:has(.option:hover) .option:not(.option:hover){
+    opacity: 0.2;
+}
+
+#list:has(.option:hover) .option:hover{
+    transform: skew(-5deg, -5deg);
+}
+
+#menue {
+    color: pink;
+}
+
+.test {
+    color: white;
+}
+
+#blob {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+}
