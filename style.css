@@ -7,8 +7,22 @@ a {
     text-decoration: inherit;
 }
 
+#name {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+p.name {
+    color: rgb(104, 170, 255);
+    font-size: 8vb;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 0rem;
+}
+
 p.option {
-    color: whitesmoke;
+    color: rgb(104, 170, 255);
     font-size: 2.2vb;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
@@ -17,6 +31,19 @@ p.option {
 
 /* lets build a side menu!!!!! */
 
+#chevron {
+    color: rgb(104, 170, 255);
+    font-size: 5vb;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    margin: 0rem;
+}
+
+p {
+    margin: inherit;
+}
+
 #menulist {
     background-image: linear-gradient(to right, rgb(5, 18, 41) 93% , rgba(255, 255, 0, 0));
     width: 25vb;
@@ -24,39 +51,27 @@ p.option {
     position: fixed;
     top: 0px;
     left: -23vb;
+
+    transition-duration: .5s;
 }
 
 #menulist:hover {
     left: 0;
     background-image: linear-gradient(to right, rgb(5, 18, 41) 30% , rgba(255, 255, 0, 0));
-    
-    transition-delay: left 1s;
+    /* bacground image changes instant */
 
-}
+    transition-duration: .5s;
 
-
-#list {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    border: 3px solid red;
 }
 
 #menulist:has(.option:hover) .option:not(.option:hover){
     opacity: 0.2;
 }
 
-#list:has(.option:hover) .option:hover{
-    transform: skew(-5deg, -5deg);
+#menulist:has(.option:hover) .option:hover{
+    transform: translate(2px, 2px);
 }
 
-#menue {
-    color: pink;
-}
-
-.test {
-    color: white;
-}
 
 #blob {
     width: 20px;
