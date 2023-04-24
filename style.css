@@ -27,6 +27,32 @@ p.name {
     margin: 0rem;
 }
 
+/* paper menu */
+
+#papermenu {
+    background-color: darkcyan;
+    height: 100vh;
+    width: 20vb;
+    position: fixed;
+    top: 0;
+    right: -18vb;
+
+    transition-duration: .5s;
+}
+
+#papermenu:hover {
+    right: 0;
+
+    transition-duration: .5s;
+}
+
+p.pop {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.2vb;
+    margin-left: 2vb;
+}
+
 /* Menu */
 
 #chevron {
