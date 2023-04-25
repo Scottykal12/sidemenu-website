@@ -2,7 +2,8 @@ body {
     background-image: url("../img/bacground.jpg");
     height: 100vh;
     width: 100vw;
-    background-size:cover
+    margin: 0;
+    background-size: cover;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
     top: 0;
     height: 200vh;
     width: 50vb;
-    background-color: blue;
+    background-image: linear-gradient(to right, rgb(112, 112, 255), blue);
     translate: -50%;
     transform: skewX(-10deg);
     transform-style: preserve-3d;
@@ -44,7 +45,7 @@ a {
     transition-duration: .8s;
 }
 
-#comicmenu:hover > #menushadow{
+#comicmenu:hover>#menushadow {
     left: 3vb;
 
     transition-duration: .8s;
@@ -53,7 +54,7 @@ a {
 p.sideoptions {
     margin: 0;
     transform: translate(-3vb, 3vb);
-    
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5vb;
     font-weight: 1000;
@@ -66,4 +67,43 @@ p.sideoptions {
 
 p.sideoptions:hover {
     transform: translate(-4vb, 3vb);
+}
+
+#name {
+    position: fixed;
+    top: 2vb;
+    right: -3vb;
+    background-image: linear-gradient(to right, blue 80%, rgb(112, 112, 255));
+    transform: skewX(-10deg);
+
+    transform-style: preserve-3d;
+
+    cursor: default;
+}
+
+#nameshadow {
+    position: fixed;
+    height: 10vb;
+    width: 200vb;
+    background-color: rgba(0, 0, 0, 0.438);
+
+    transform: translate3d(-1vb, -1vb, -1px);
+
+}
+
+p.name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vb;
+    font-weight: 1000;
+    color: wheat;
+    text-transform: uppercase;
+    text-align: right;
+
+    margin: 0;
+
+    padding-left: 2vb;
+    padding-right: 5vb;
+    padding-bottom: 2vb;
+    padding-top: 2vb;
+
 }
