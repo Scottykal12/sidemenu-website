@@ -9,8 +9,8 @@ a {
 
 #blob {
     position: fixed;
-    width: 36%;
-    height: 64%;
+    width: 500px;
+    height: 500px;
     translate: -50% -50%;
     border-radius: 50%;
     background-image: radial-gradient(rgb(49, 49, 49) , black);
@@ -37,6 +37,7 @@ p.option {
     font-size: 2.5vw;
     font-weight: 900;
 
+    transition-duration: .4s;
 
     margin: 5%;
 
@@ -46,5 +47,9 @@ p.option {
 
 p.option:hover {
     transform: scale(110%, 110%);
+}
+
+p.option:active {
+    transform: scale(90%, 90%);
 }
 
