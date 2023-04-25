@@ -2,121 +2,36 @@ body {
     background-color: black;
 }
 
-p {
-    margin: inherit;
-}
-
 a {
-    color: inherit;
     text-decoration: inherit;
+    color: inherit;
 }
 
-/* name */
-
-#name {
+#menu {
     position: fixed;
-    top: 0;
-    right: 0;
-}
-
-p.name {
-    color: rgb(104, 170, 255);
-    font-size: 8vb;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
-    margin: 0rem;
-}
-
-/* paper menu */
-
-#papermenu {
-    background-color: darkcyan;
-    height: 100vh;
-    width: 20vb;
-    position: fixed;
-    top: 0;
-    right: -18vb;
-
-    transition-duration: .5s;
-}
-
-#papermenu:hover {
-    right: 0;
-
-    transition-duration: .5s;
-}
-
-p.pop {
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2.2vb;
-    text-transform: uppercase;
-    text-align: right;
-    margin-right: .5vb;
-}
-
-/* Menu */
-
-#chevron {
-    color: rgb(104, 170, 255);
-    font-size: 5vb;
-    position: fixed;
-    top: 40%;
-    left: 0;
-    margin: 0rem;
-}
-
-#fade {
-    background-image: linear-gradient(to right, rgb(25, 86, 190) 1%, rgba(255, 255, 0, 0));
-    white-space: pre;
-    position: fixed;
-    left: 0;
-    height: 100vh;
-    width: .5vw;
-
-}
-
-#menulist {
-    background-image: linear-gradient(to right, rgb(5, 18, 41) 30%, rgba(255, 255, 0, 0));
-    width: 25vb;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: -23vb;
-
-    transition-duration: .5s;
-}
-
-#menulist:hover {
-    left: 0;
-    background-image: linear-gradient(to right, rgb(5, 18, 41) 30%, rgba(255, 255, 0, 0));
-    /* bacground image changes instant */
-
-    transition-duration: .5s;
+    margin: 0;
+    width: 20%;
+    height: 20%;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
 
 }
 
 p.option {
-    color: rgb(104, 170, 255);
-    font-size: 2.2vb;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
-    margin: 0rem;
+    background-color: rgb(97, 97, 97);
+    border-radius: 90deg;
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+
+    margin: 10px;
+
+    border-radius: 10px;
+
 }
 
-#menulist:has(.option:hover) .option:not(.option:hover) {
-    opacity: 0.2;
+p.option:hover {
+    transform: scale(110%, 110%);
 }
 
-#menulist:has(.option:hover) .option:hover {
-    transform: translate(2px, 2px);
-}
-
-/* blob */
-
-#blob {
-    position: absolute;
-    width: 20vb;
-    height: 20vb;
-    background-color: aqua;
-}
