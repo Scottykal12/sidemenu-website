@@ -50,7 +50,9 @@ p.pop {
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2.2vb;
-    margin-left: 2vb;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: .5vb;
 }
 
 /* Menu */

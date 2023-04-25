@@ -1,0 +1,66 @@
+body {
+    background: wheat;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#comicmenu {
+    position: fixed;
+    z-index: 0;
+    left: 0vb;
+    top: 0;
+    height: 200vh;
+    width: 50vb;
+    background-color: blue;
+    translate: -50%;
+    transform: skewX(-10deg);
+    transform-style: preserve-3d;
+
+    transition-duration: .8s;
+}
+
+#comicmenu:hover {
+    left: 7vb;
+
+    transition-duration: .8s;
+}
+
+#menushadow {
+    position: fixed;
+    z-index: -1;
+    left: 2vb;
+    height: 200vh;
+    width: 52vb;
+    background-color: rgba(0, 0, 0, 0.438);
+    translate: -5%;
+    transform: translate3d(0, 2vb, -1px);
+
+    transition-duration: .8s;
+}
+
+#comicmenu:hover > #menushadow{
+    left: 3vb;
+
+    transition-duration: .8s;
+}
+
+p.sideoptions {
+    margin: 0;
+    transform: translate(-3vb, 3vb);
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vb;
+    font-weight: 1000;
+    color: wheat;
+    text-transform: uppercase;
+    text-align: right;
+
+    z-index: 1;
+}
+
+p.sideoptions:hover {
+    transform: translate(-4vb, 3vb);
+}
