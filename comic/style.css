@@ -87,7 +87,7 @@ p.sideoptions:hover {
     width: 200vb;
     background-color: rgba(0, 0, 0, 0.438);
 
-    transform: translate3d(-1vb, -1vb, -1px);
+    transform: translate3d(1vb, 1vb, -1px);
 
 }
 
