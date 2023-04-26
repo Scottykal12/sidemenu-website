@@ -1,0 +1,48 @@
+body {
+    background-color: beige;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#dock {
+    position: absolute;
+    height: 9vh;
+    width: fit-content;
+    bottom: 1vh;
+    left: 50%;
+    translate: -50% -0%;
+    background-color: gray;
+    border-radius: 5vh;
+    white-space: nowrap;
+    text-align: center;
+    padding: 1%;
+}
+
+i.option {
+    position: relative;
+    top: 3vh;
+    font-size: 7vb;
+    translate: 0% -40%;
+    margin: .8vw;
+}
+
+i.option:hover {
+    transform: translate(0vh, -.7vh);
+}
+
+i.option:active {
+    transform: scale(90%);
+}
+
+i.home {
+    font-size: 10vb;
+    padding: 2vb;
+}
+
+p.home {
+    font-size: 4vb;
+    margin: 0;
+}
