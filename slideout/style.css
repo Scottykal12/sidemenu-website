@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(35, 29, 75);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+menu {
+    position: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+i.option {
+    padding-left: 8vw;
+    padding-right: 1vw;
+}
+
+.options {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    translate: 0% -50%;
+}
+
+p.option {
+    background-color: gray;
+    
+    font-size: 5vb;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+
+    padding-left: 6vw;
+    /* padding-right: 7vw; */
+
+    border-radius: 5vb;
+
+    translate: -87%;
+
+    transition-duration: .3s;
+}
+
+p.option:hover {
+    transform: translateX(70%);
+
+    transition-duration: .3s;
+}
+

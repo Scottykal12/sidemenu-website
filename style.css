@@ -9,12 +9,12 @@ a {
 
 #blob {
     position: fixed;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     translate: -50% -50%;
     border-radius: 50%;
     background-image: radial-gradient(rgb(49, 49, 49) , black);
-    opacity: .5;
+    opacity: .6;
 }
 
 #menu {
